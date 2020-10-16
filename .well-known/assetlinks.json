@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.sncent.s1945iigg.mncgames",
+    "sha256_cert_fingerprints":
+    ["FF:D7:1A:65:9A:E2:DF:56:2E:F7:8A:37:52:E7:5C:A1:1E:24:63:C2:ED:4E:44:0A:16:92:04:DC:14:01:B9:B2"]
+  }
+}]
