@@ -2,6 +2,8 @@ var launchAppUrl = "s1945ii://";
 var timer;
 var schinterval;
 
+MyApp();
+
 function MyApp(){
     function clearTimers(){
         clearInterval(heartbeat);
