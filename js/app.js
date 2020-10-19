@@ -2,9 +2,10 @@ var launchAppUrl = "s1945ii://";
 var timer;
 var schinterval;
 
+location.href = launchAppUrl;
+
 MyApp();
 
-location.href = launchAppUrl;
 
 function MyApp(){
     function clearTimers(){
@@ -15,15 +16,17 @@ function MyApp(){
     function intervalHeartbeat(){
         if(document.webkitHidden || document.hidden){
             clearTimers();
-            //document.write("<meta http-equiv='refresh' content='0;url=https://leeyonggi.github.io/s1945ii_1010_mnc/'>");
+            document.write("<meta http-equiv='refresh' content='0;url=https://leeyonggi.github.io/s1945ii_1010_mnc/'>");
             document.write("<h1>앱이 있습니다.</h1>");
         }
     }
 
-    heartbeat = setInterval(intervalHeartbeat, 200);
+    //heartbeat = setInterval(intervalHeartbeat, 200);
     var delay = 1000;
     timer = setTimerout(function() {
-        console.log('앱이 없습니다.');
-        document.write("<h1>앱이 없습니다.</h1>");
+        //console.log('앱이 없습니다.');
+        //document.write("<h1>앱이 없습니다.</h1>");
+        location.href = "intent://s1945ii#Intent; scheme=s1945ii; package=com.sncent.s1945iigg.mncgames; end;";
+
     }, delay);
 }
