@@ -4,6 +4,8 @@ var schinterval;
 
 MyApp();
 
+location.href = launchAppUrl;
+
 function MyApp(){
     function clearTimers(){
         clearInterval(heartbeat);
