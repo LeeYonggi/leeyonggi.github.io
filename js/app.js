@@ -1,8 +1,24 @@
-setTimeout( function () {
-    if ( ( new Date() ).getTime() - visitedAt < 2000 ) {
-        location.href = "market://details?id=com.sncent.s1945iigg.mncgames";
+var launchAppUrl = "s1945ii://";
+var timer;
+var schinterval;
+
+function MyApp(){
+    function clearTimers(){
+        clearInterval(heartbeat);
+        clearTimeout(timer);
     }
-} ,500 );
-setTimeout( function () {
-    location.href = "https://";
-} ,0 );
+
+    function intervalHeartbeat(){
+        if(document.webkitHidden || document.hidden){
+            clearTimers();
+            document.write("<meta http-equiv='refresh' content='0;url=https://leeyonggi.github.io/s1945ii_1010_mnc/'>");
+        }
+    }
+
+    heartbeat = setInterval(intervalHeartbeat, 200);
+    var delay = 1000;
+    timer = setTimerout(function() {
+        console.log('앱이 없습니다.');
+        document.write("<h1>제목1</h1>");
+    }, delay);
+}
